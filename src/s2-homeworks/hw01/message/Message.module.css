@@ -1,5 +1,7 @@
 .message {
-
+   position: relative;
+   right: -70%;
+   border: 1px solid red;
 }
 
 .imageAndText {
@@ -7,7 +9,8 @@
 }
 
 .imageAndText img {
-
+   width: 48px;
+   height: 48px;
 }
 
 .text {
@@ -19,7 +22,6 @@
 }
 
 .name {
-
 }
 
 .messageText {
