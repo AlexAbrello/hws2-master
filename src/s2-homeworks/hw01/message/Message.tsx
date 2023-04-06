@@ -4,7 +4,7 @@ import s from './Message.module.css'
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
-    message: MessageType
+  message: MessageType
 }
 
 // нужно отобразить приходящие данные

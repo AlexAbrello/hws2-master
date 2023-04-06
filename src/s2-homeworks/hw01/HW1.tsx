@@ -20,12 +20,12 @@ export type MessageType = {
     message: TextType
 }
 
-export type UserType = {
+type UserType = {
     avatar: string
     name: string
 }
 
-export type TextType = {
+type TextType = {
     text: string
     time: string
 }
