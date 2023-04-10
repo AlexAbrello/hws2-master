@@ -5,27 +5,60 @@
 }
 
 .error {
+    color: red;
 }
 
 .input {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
 }
 
 .input:focus {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
 }
 
 .errorInput {
+    border: 1px solid red;
+    border-radius: 5px;
+    outline: red;
 }
 
 .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 78px;
+    height: 36px;
+    left: 454px;
+    top: 224px;
+
+    /* Primary/100 */
+
+    background: #0066CC;
+    border-radius: 3px;
 }
 
 .button:focus {
+
 }
 
 .button:active {
+
 }
 
 .button:disabled {
+    background: #0066CC;
+    opacity: 0.5;
 }
 
 .text {
