@@ -5,15 +5,27 @@
 }
 
 .users {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container {
+    width: 50%;
 }
 
 .thead {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
 }
 
 .nameCol {

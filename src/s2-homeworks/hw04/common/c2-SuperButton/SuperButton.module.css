@@ -6,6 +6,7 @@
     padding: 5px 24px;
     gap: 10px;
     border-radius: 3px;
+    margin-left: 10px;
 }
 
 .disabled {
