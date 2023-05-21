@@ -36,11 +36,20 @@ function Clock() {
     setShow(false)
   }
 
-  console.log(date.getHours() > 0)
+  const getCurrentTime = (): string => {
 
-  const stringTime = date.getHours() < 0
-      ? `0${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}` || <br/>
-      : `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}` || <br/>
+    const hours: number = date.getHours()
+    const minutes: number = date.getMinutes()
+    const seconds: number = date.getSeconds()
+
+    const hoursString: string = hours.toString().padStart(2, '0');
+    const minutesString: string = minutes.toString().padStart(2, '0');
+    const secondsString: string = seconds.toString().padStart(2, '0');
+
+    return `${hoursString}:${minutesString}:${secondsString}`;
+  }
+
+  const stringTime = getCurrentTime()
   // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
   const stringDate = `${date.getUTCDate()}.0${date.getMonth() + 1}.${date.getUTCFullYear()}` || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
 
