@@ -5,6 +5,8 @@
 .hw {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .hwTitle {
