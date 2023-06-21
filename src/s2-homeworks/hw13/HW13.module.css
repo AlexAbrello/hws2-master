@@ -1,22 +1,29 @@
 .buttonsContainer {
+    display: flex;
 }
 
 .responseContainer {
+    display: flex;
 }
 
 .imageContainer {
+    margin-top: 50px;
 }
 
 .image {
 }
 
 .textContainer{
+    margin-top: 50px;
 }
 
 .code {
+
 }
 
 .text {
+
 }
 .info {
+
 }
