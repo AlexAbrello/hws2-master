@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
+import {logDOM} from "@testing-library/react";
 
 /*
 * 1 - дописать SuperPagination
@@ -71,7 +72,7 @@ const HW15 = () => {
         setCount(newCount)
 
         sendQuery({newPage, newCount})
-        setSearchParams({totalCount: newCount.toString()})
+        setSearchParams({size: newPage.toString()})
 
         //
     }
@@ -106,7 +107,7 @@ const HW15 = () => {
             </div>
         </div>
     ))
-
+    console.log(searchParams)
     return (
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
