@@ -5,7 +5,6 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
-import {logDOM} from "@testing-library/react";
 import {Loader} from "../hw10/Loader";
 
 /*
@@ -72,8 +71,8 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
 
-        sendQuery({newPage, newCount})
-        setSearchParams({size: newPage.toString()})
+        sendQuery({count: newCount, page: newPage})
+        setSearchParams({count: newCount.toString()})
 
         //
     }
