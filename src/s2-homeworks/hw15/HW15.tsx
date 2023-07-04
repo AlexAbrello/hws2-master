@@ -69,8 +69,8 @@ const HW15 = () => {
         // делает студент
         debugger
 
-       // setPage(newPage)
-        //setCount(newCount)
+        setPage(newPage)
+        setCount(newCount)
 
         sendQuery({count: newCount})
         //setSearchParams()
